@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/adoah
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://adoah.github.io
+  * I am adoah (https://keybase.io/adoah) on keybase.
+  * I have a public key with fingerprint 751D 0433 39D1 C690 618C  47F3 B6A4 5B2C 13F6 D512
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012099a25758cd18b51c5b40fab13da0dcafbfaa376fd911f12e20dd7d237390401d0a",
+      "fingerprint": "751d043339d1c690618c47f3b6a45b2c13f6d512",
+      "host": "keybase.io",
+      "key_id": "b6a45b2c13f6d512",
+      "kid": "01018f9a69c563bda6365c41fa52760698e39022f9c4e104d00232f3339db8d46d900a",
+      "uid": "f3b83ba7142ed827b6ba66ec3b797419",
+      "username": "adoah"
+    },
+    "service": {
+      "hostname": "adoah.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1513714467,
+  "expire_in": 157680000,
+  "prev": "4b58775e781efa49f9efe52123641256d2ed7e1f201bc4f2804547b67662deea",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMNtAnicbZJ/UFRVFMcXRApGGRCV+COIh9I4g/Tu+/0wp4AkoHFITaEglvvevW/3
+CexbdheQAY2kUECIqQSaGhlop9CAKWSWH2IEgSak4YAEogyNxR/SqKSIkzD1lnKm
+P7r/3LnnfM/3fs6ZM7h+jcHXw+VMiwx8eG2Dx0h/fZ7hLdEeXkRIGiokoouILLx6
+4WyE7Q5jloqIaIIEFCmKkGJ5VpARECQWyKzEkAqUAI0giWSoSAqENM8pSARAARSm
+SIR4RNE8LZIMCRAJiUhCUS0mbLPaVItDt+VZPczQNC0iIHMiyQFBZniFljjIsBIl
+A1rhEAsovdCs2d0VOpwE7ThK1fSY/jCu4v2P/gk3CQRFhJwosxwtIcjRHCszQIEs
+xXMkJwpYp6MoRZQZDEgGkSRFU8oqkSQghkMiucqdt2qnkwm0BHnAUBgJFC9xEuQ4
+LNMSL/IMEN1CO7ZZYA7W1RBp0EwcjiT0UL4qY/dU3W38Nx1lUh3mPOmffqw2zaHJ
+WraeNDscVnu0u9hRaHWrC7Bk/NfHKKkWpM9Rr8jHNruqWYhooCtlh+o2BiygdUKG
+4yMJfMiq2rBRdStYnhNI/bj/wfm6JSOxAs+zmBcAViAjKiJWMEsBiuYYQLEc0pvk
+MVAoEkgyo1ACybCM3jPPcRTC2D0WO861aLo3o3NCk+5pV00W6MizYeLwQH+6l8HD
+1+C91tO9YAZfH/8na5cZ6m9oGwGny3r/TLv56bL52ACepDNSPple+rByU1pzQV3P
+kbbnP1u+CO9N+L0xW+zRselqUGxKbVDL5rq9PQ/D+i4pN+5730//QU2I6RxX7hRO
+TN2tercJAm+Y5LtxzoxSp+LOu1Z8SpvqW0oM5YkzTFZr2MKLc6PXR8eDHrmi1/zK
+D+zuQAlLAXF7y6/XYHno8dEan/Z94S0JY2i2aTbNdNeDOfXdydsrRN+eMnDzzfQX
+5h5/XRTbsuNc1OnboTk9qCtpKrgoODNj1PFzRWWNek686PKd2LL52+eyl6xBdduT
+Fg+VXvH0TD7YQZxpz10uiW0wbL2g2jLgg97X6j0OPAi5UJ08+HT8B92DrcMV3n37
+Y6cSg211ca+sCy1sLEsopiKSG6rCvTJTrwRUJI7d+vwjeHJdfm9KX/Nkyq14V//t
+htovV7gwx1xL6siPC8aZg93vxZ8vfvWZ8Zw9jzriXCXV9MzOG549Zf1osXvXtuHj
+Vc1t/drAPVvNH1PG35zFnoNnnGd3an4bX/JudEb8dfmLgPljV7XX32kMnxqv/uZ9
+dv1Y4InJawu7Y1dyL8cMOQvPbonQcq2/BCaZNxwNmt71U5L/kfkuy9Ls0P6MtZ1x
+7aUBeL58etqrki/dJ8V8FVHQ9b1Pjglcevnj4R1bXSG1B7wrT21r7XQuHn82ZPLO
+9lg/9DYo/P2phL8BTALCJg==
+=9dWg
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adoah
+
+==================================================================
