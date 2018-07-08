@@ -1,26 +1,6 @@
-#game{
-    margin 30px;
-    text-align:center;
-    padding 50px;
-}
-
-#quit{
-    margin 30px;
-    text-align:center;
-    padding 50px;
-}
-#calm{
-    margin 30px;
-    text-align:center;
-    padding 50px;
-}
-#culture{
-    margin 30px;
-    text-align:center;
-    padding 50px;
-}
-#enjoy{
-    margin 30px;
-    align:center;
-    padding 50px;
+.center
+{
+    margin: auto;
+    width: 50%;
+    padding: 100px;
 }
