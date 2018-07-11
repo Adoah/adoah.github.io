@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var maxHeight = $(window).height();
+        var count = 0;
+        var heightSteps = [];
+        heightSteps[0] = maxHeight/3 - 1;
+
+
+        this.doMathRecursively = function (input) {
+            heightSteps.push((input * 0.67) - 1);
+            count++;
+            if (count <= 10) {
+                doMathRecursively(input * 0.67);
+            }
+        }
+
+        doMathRecursively(maxHeight/3);
+
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,9 +28,26 @@
     <script src="script.js"></script>
     <script src="branch.js"></script>
     <title>Testing Platform</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* remove top and left whitespace */
+
+        canvas {
+            display: block;
+        }
+
+        /* remove scrollbars */
+
+        canvas:focus {
+            outline: 0;
+        }
+
+        /* remove blue outline around canvas */
+    </style>
 </head>
-<body>
-    <h2>This is solely for testing purposes</h2>
-    
-</body>
+
 </html>
