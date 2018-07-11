@@ -12,43 +12,65 @@ function branch(begin, end) {
     }
     //creates two additional branch objescts from the current branch object.
     //maybe combine into one function later on 
-    this.branchA = function () {
-
+    this.generateBranches = function () {
         var dir = p5.Vector.sub(this.end, this.begin);
-        dir.rotate(PI/5);
         dir.mult(0.67);
-        var newEnd = p5.Vector.add(this.end, dir);
-        var A = new branch(this.end, newEnd);
-        return A;
+        dir.rotate(PI / 5);
+        var newEndA = p5.Vector.add(this.end, dir);
+        var genA = new branch(this.end, newEndA);
+        dir.rotate(-PI / 5);
+        dir.rotate(-PI / 5);
+        var newEndB = p5.Vector.add(this.end, dir);
+        var genB = new branch(this.end, newEndB);
+        dir.rotate(PI / 5);
+        dir.rotate(PI / 8);
+        var newEndC = p5.Vector.add(this.end, dir);
+        var genC = new branch(this.end, newEndC);
+        dir.rotate(-PI / 8);
+        dir.rotate(-PI / 8);
+        var newEndD = p5.Vector.add(this.end, dir);
+        var genD = new branch(this.end, newEndD);
+        return [genA, genB, genC, genD];
     }
-    this.branchB = function () {
-        var dir = p5.Vector.sub(this.end, this.begin);
-        dir.rotate(-PI/5);
-        dir.mult(0.67);
-        var newEnd = p5.Vector.add(this.end, dir);
-        var B = new branch(this.end, newEnd);
-        return B;
-    }
-    this.branchC = function () {
-        var dir = p5.Vector.sub(this.end, this.begin);
-        dir.rotate(PI/8);
-        dir.mult(0.67);
-        var newEnd = p5.Vector.add(this.end, dir);
-        var C = new branch(this.end, newEnd);
-        return C;
-    }
-    this.branchD = function () {
-        var dir = p5.Vector.sub(this.end, this.begin);
-        dir.rotate(-PI/8);
-        dir.mult(0.67);
-        var newEnd = p5.Vector.add(this.end, dir);
-        var D = new branch(this.end, newEnd);
-        return D;
-    }
-    this.defineThickness = function(thickness){
+    /*  DEPRECEATED
+        this.branchA = function () {
+    
+            var dir = p5.Vector.sub(this.end, this.begin);
+            dir.rotate(PI / 5);
+            dir.mult(0.67);
+            var newEnd = p5.Vector.add(this.end, dir);
+            var A = new branch(this.end, newEnd);
+            return A;
+        }
+        this.branchB = function () {
+            var dir = p5.Vector.sub(this.end, this.begin);
+            dir.rotate(-PI / 5);
+            dir.mult(0.67);
+            var newEnd = p5.Vector.add(this.end, dir);
+            var B = new branch(this.end, newEnd);
+            return B;
+        }
+        this.branchC = function () {
+            var dir = p5.Vector.sub(this.end, this.begin);
+            dir.rotate(PI / 8);
+            dir.mult(0.67);
+            var newEnd = p5.Vector.add(this.end, dir);
+            var C = new branch(this.end, newEnd);
+            return C;
+        }
+        this.branchD = function () {
+            var dir = p5.Vector.sub(this.end, this.begin);
+            dir.rotate(-PI / 8);
+            dir.mult(0.67);
+            var newEnd = p5.Vector.add(this.end, dir);
+            var D = new branch(this.end, newEnd);
+            return D;
+        }
+        */
+    this.defineThickness = function (thickness) {
         this.thickness = thickness;
     }
-    this.getThickness = function(){
+    this.getThickness = function () {
         return this.thickness;
     }
 }

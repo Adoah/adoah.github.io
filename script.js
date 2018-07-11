@@ -24,15 +24,17 @@ function mouseWheel(event) {
         for (var i = tree.length - 1; i >= 0; i--) {
             if (!tree[i].finished && counter <= 9) {
                 tree[i].defineThickness(9 - counter);
-                tree.push(tree[i].branchA());
-                tree.push(tree[i].branchB());
-                tree.push(tree[i].branchC());
-                tree.push(tree[i].branchD());
+                var tmp = tree[i].generateBranches();
+
+                tree.push(tmp[0]);
+                tree.push(tmp[1]);
+                tree.push(tmp[2]);
+                tree.push(tmp[3]);
             }
             tree[i].finished = true;
         }
     }
-    if(event.delta < 0){
-        
+    if (event.delta < 0) {
+
     }
 }
