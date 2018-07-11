@@ -5,7 +5,7 @@ function setup() {
     createCanvas(1200, 900);
     var a = createVector(width / 2, height);
     var b = createVector(width / 2, height - 200);
-    var root = new branch(a, b);
+    var root = new branch(a, b, 200);
     tree[0] = root;
 }
 
@@ -22,8 +22,7 @@ function mouseWheel(event) {
     if (event.delta > 0) {
         counter++;
         for (var i = tree.length - 1; i >= 0; i--) {
-            if (!tree[i].finished && counter <= 9) {
-                tree[i].defineThickness(9 - counter);
+            if (counter <= 9) {
                 var tmp = tree[i].generateBranches();
 
                 tree.push(tmp[0]);
@@ -35,6 +34,13 @@ function mouseWheel(event) {
         }
     }
     if (event.delta < 0) {
-
+        for(var i = tree.length - 1; i >= 0; i--){
+            if(8 - tree[i].getThickness() == counter){
+                tree.splice(i, 1);
+            }
+        }
+        if(counter >= 0){
+            counter--;
+        }
     }
 }
