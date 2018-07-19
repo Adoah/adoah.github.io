@@ -342,9 +342,9 @@
   .profile-card p {
     margin: 0px;
   }
-  
+  /*ball bounce animation, lots to learn here.*/
   .profile-card {
-    background: #FFB300;
+    background: blue;
     width: 56px;
     height: 56px;
     position: absolute;
@@ -578,7 +578,7 @@
   
   @-webkit-keyframes moveUp {
     0% {
-      background: #FFB300;
+      background: green;
       top: 100%;
     }
     50% {
@@ -592,7 +592,7 @@
   
   @keyframes moveUp {
     0% {
-      background: #FFB300;
+      background: greenyellow;
       top: 100%;
     }
     50% {
