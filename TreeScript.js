@@ -1,9 +1,25 @@
+$('#particles-js').css("background-color", "rgb(0,0,0)");
 var tree = [];
 var counter = 0;
 var maxHeight;
+var heightSteps = [];
 
 function setup() {
-    createCanvas($(document).width(), $(window).height());
+    createCanvas($(document).width() - 200, $(window).height() - 1);
+    maxHeight = $(window).height();
+    var count = 0;
+    heightSteps[0] = maxHeight / 4 - 1;
+
+
+    this.doMathRecursively = function (input) {
+        heightSteps.push((input * 0.67) - 1);
+        count++;
+        if (count <= 10) {
+            doMathRecursively(input * 0.67);
+        }
+    }
+
+    doMathRecursively(maxHeight / 4);
     console.log(heightSteps);
 }
 
@@ -20,20 +36,26 @@ function mouseWheel(event) {
     if (event.delta > 0) {
         if (counter == 0) {
             maxHeight = (height / 3);
-            var a = createVector(width / 2, height);
-            var b = createVector(width / 2, height - height / 3);
-            tree[0] = new branch(a, b, height / 3);
+            var a = createVector(width / 2 - 100, height);
+            var b = createVector(width / 2 - 100, height - height / 4);
+            tree[0] = new branch(a, b, height / 4);
             console.log(height);
         }
         else {
             for (var i = tree.length - 1; i >= 0; i--) {
-                if (counter < 9) {
+                if (counter < 3) {
                     var tmp = tree[i].generateBranches();
                     tree.push(tmp[0]);
                     tree.push(tmp[1]);
                     tree.push(tmp[2]);
                     tree.push(tmp[3]);
                     tree.push(tmp[4]);
+                }
+                else if (counter < 7) {
+                    var tmp = tree[i].generateBranches();
+                    tree.push(tmp[0]);
+                    tree.push(tmp[1]);
+                    tree.push(tmp[2]);
                 }
                 tree[i].finished = true;
             }

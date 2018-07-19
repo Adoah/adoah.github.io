@@ -10,16 +10,13 @@ function branch(begin, end, len, maxheight) {
     var isHidden = true;
 
     this.show = function () {
-        if (len > heightSteps[0]) { this.thickness = 8; this.color = stroke(193, 76, 254) }
-        //red
-        else if (len > heightSteps[1]) { this.thickness = 7; this.color = stroke(71, 76, 254); }
-        //blue
-        else if (len > heightSteps[2]) { this.thickness = 6; this.color = stroke(71, 207, 229); }
-        //green
-        else if (len > heightSteps[3]) { this.thickness = 5; this.color = stroke(28, 207, 80); }
-        else if (len > heightSteps[4]) { this.thickness = 4; this.color = stroke(155, 255, 123); }
-        else if (len > heightSteps[5]) { this.thickness = 3; this.color = stroke(203, 203, 0); }
-        else if (len > heightSteps[6]) { this.thickness = 2; this.color = stroke(205, 146, 0); }
+        if (len > heightSteps[0]) { this.thickness = 7; this.color = stroke(193, 76, 254);}
+        else if (len > heightSteps[1]) { this.thickness = 6; this.color = stroke(71, 76, 254);}
+        else if (len > heightSteps[2]) { this.thickness = 5; this.color = stroke(71, 207, 229); }
+        else if (len > heightSteps[3]) { this.thickness = 4; this.color = stroke(28, 207, 80); }
+        else if (len > heightSteps[4]) { this.thickness = 3; this.color = stroke(155, 255, 123); }
+        else if (len > heightSteps[5]) { this.thickness = 2; this.color = stroke(203, 203, 0); }
+        else if (len > heightSteps[6]) { this.thickness = 1; this.color = stroke(255, 0, 0); }
         else if (len > heightSteps[7]) { this.thickness = 1; this.color = stroke(255, 0, 0); }
         strokeWeight(this.thickness);
         line(this.begin.x, this.begin.y, this.end.x, this.end.y);
