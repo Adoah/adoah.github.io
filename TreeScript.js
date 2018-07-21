@@ -43,20 +43,20 @@ function mouseWheel(event) {
         }
         else {
             for (var i = tree.length - 1; i >= 0; i--) {
-                if (counter < 3) {
+                if (counter < 8) {
                     var tmp = tree[i].generateBranches();
                     tree.push(tmp[0]);
                     tree.push(tmp[1]);
                     tree.push(tmp[2]);
                     tree.push(tmp[3]);
                     tree.push(tmp[4]);
-                }
+                }/*
                 else if (counter < 7) {
                     var tmp = tree[i].generateBranches();
                     tree.push(tmp[0]);
                     tree.push(tmp[1]);
                     tree.push(tmp[2]);
-                }
+                }*/
                 tree[i].finished = true;
             }
         }
