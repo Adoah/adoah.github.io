@@ -419,10 +419,10 @@
     -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
   }
-  
+
   .profile-card .profile-bio {
     width: 200px;
-    height: 100px;
+    height: 125px;
     display: inline-block;
     float: right;
     padding: 50px 20px 30px 20px;
@@ -430,11 +430,10 @@
     color: #333333;
     margin-top: 50px;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: moveIn 1s 3.1s ease forwards;
     animation: moveIn 1s 3.1s ease forwards;
   }
-  
   .profile-social-links {
     width: 218px;
     display: block;
