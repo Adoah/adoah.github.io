@@ -221,23 +221,19 @@
     parallax-window
   ------------------------*/
   .parallax-window {
-      min-height: 400px;
+      min-height: 15vh;
       background: transparent;
   }
   
   .parallax-window-half {
-      min-height: 200px;
+      min-height: 10vh;
       background: transparent;
   }
   
   /* ----------------------
     experience (company)
   ------------------------*/
-  
-  /*.push-to-bottom {
-    position: absolute;
-    bottom: 5%;
-  }*/
+
   
   .flx-center {
     display: flex;
