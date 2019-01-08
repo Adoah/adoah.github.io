@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="assets\lib\lightgallery.js-master\dist\css\lightgallery.css" />
+    <script src="assets\lib\lightgallery.js-master\dist\js\lightgallery.js"></script>
+    <script src="assets\lib\lightgallery.js-master\src\js\lg-utils.js"></script>
+    <script src="assets\lib\lightgallery.js-master\dist\js\lightgallery.min.js"></script>
+    <script src="assets\lib\lightgallery.js-master\demo\js\lg-thumbnail.js"></script>
+    <script src="assets\lib\lightgallery.js-master\demo\js\lg-thumbnail.min.js"></script>
+    <script src="assets\lib\lightgallery.js-master\demo\js\lg-zoom.js"></script>
+    <script src="assets\lib\lightgallery.js-master\demo\js\lg-zoom.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- lightgallery plugins -->
+    <div id="lightgallery" style="display:inline-block">
+        <a href="assets/img/alb1/bridge.jpg">
+            <img src="assets/img/alb1/thumbs/running.jpg" width="200" />
+        </a>
+        <div id="lightgallery" style="display:inline-block; overflow:auto">
+            <a href="assets/img/alb1/rush.jpg">
+                <img src="assets/img/alb1/thumbs/rush.jpg" width="200" />
+            </a>
+            <a href="assets/img/alb1/trash.jpg">
+                <img src="assets/img/alb1/thumbs/trash.jpg" width="200" />
+            </a>
+        </div>
+        <a href="assets/img/alb1/solstice.jpg">
+            <img src="assets/img/alb1/thumbs/solstice.jpg" width="200" />
+        </a>
+        <a href="assets/img/alb1/traffic.jpg">
+            <img src="assets/img/alb1/thumbs/traffic.jpg" width="200" />
+        </a>
+        <a href="assets/img/alb1/bassist.jpg">
+            <img src="assets/img/alb1/thumbs/bassist.jpg" width="200" />
+        </a>
+        <a href="assets/img/alb1/bridge.jpg">
+            <img src="assets/img/alb1/thumbs/bridge.jpg" width="200" />
+        </a>
+        <a href="assets/img/alb1/bridge.jpg">
+            <img src="assets/img/alb1/thumbs/bridge.jpg" width="200" />
+        </a>
+    </div>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            thumbnail: true,
+            zoom: true,
+        }); 
+    </script>
+</body>
+
+</html>
