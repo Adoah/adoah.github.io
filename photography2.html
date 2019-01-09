@@ -15,45 +15,43 @@
 
 <body style="background:grey">
     <!-- lightgallery plugins -->
-    <ul id="lightgallery" style="display:inline-block; overflow:auto; background:grey">
-        <a href="assets/img/alb1/running.jpg">
-            <img src="assets/img/alb1/thumbs/running.jpg" width="200" />
-        </a>
-        <!-- <div id="lightgallery"> -->
-        <li style="display:block">
-            <a href="assets/img/alb1/rush.jpg">
-                <img src="assets/img/alb1/thumbs/rush.jpg" width="200" style="display:inline-block; overflow:auto" />
-            </a>
-        </li>
-        <!-- <br> -->
-        <li style="display:block">
-            <a href="assets/img/alb1/trash.jpg">
-                <img src="assets/img/alb1/thumbs/trash.jpg" width="200" style="display:inline-block; overflow:auto" />
-            </a>
-        </li>
-        <!-- </div> -->
-        <a href="assets/img/alb1/solstice.jpg">
-            <img src="assets/img/alb1/thumbs/solstice.jpg" width="200" style="overflow:auto" />
-        </a>
-        <a href="assets/img/alb1/traffic.jpg">
-            <img src="assets/img/alb1/thumbs/traffic.jpg" width="200" />
-        </a>
-        <a href="assets/img/alb1/bassist.jpg">
-            <img src="assets/img/alb1/thumbs/bassist.jpg" width="200" />
-        </a>
-        <a href="assets/img/alb1/bridge.jpg">
-            <img src="assets/img/alb1/thumbs/bridge.jpg" width="200" />
-        </a>
-        <a href="assets/img/alb1/bridge.jpg">
-            <img src="assets/img/alb1/thumbs/bridge.jpg" width="200" />
-        </a>
-    </ul>
-    <script type="text/javascript">
-        lightGallery(document.getElementById('lightgallery'), {
-            thumbnail: true,
-            zoom: true
-        }); 
-    </script>
+    <div class="demo">
+        <ul id="lightgallery" style=" background:grey">
+            <li class="portfolio_li" data-src="assets/img/alb1/running.jpg"><img src="assets/img/alb1/thumbs/running.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/trash.jpg"><img src="assets/img/alb1/thumbs/trash.jpg"
+                    width="200"></li>
+            <!-- <br><br><br><br><br><br><br><br><br> -->
+            <li class="portfolio_li" data-src="assets/img/alb1/rush.jpg"><img src="assets/img/alb1/thumbs/rush.jpg"
+                    width="200"></li>
+            <!-- <br> -->
+            <li class="portfolio_li" data-src="assets/img/alb1/solstice.jpg"><img src="assets/img/alb1/thumbs/solstice.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/traffic.jpg"><img src="assets/img/alb1/thumbs/traffic.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/bassist.jpg"><img src="assets/img/alb1/thumbs/running.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/solstice.jpg"><img src="assets/img/alb1/thumbs/bassist.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/solstice.jpg"><img src="assets/img/alb1/thumbs/running.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/solstice.jpg"><img src="assets/img/alb1/thumbs/bassist.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/solstice.jpg"><img src="assets/img/alb1/thumbs/solstice.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/solstice.jpg"><img src="assets/img/alb1/thumbs/bassist.jpg"
+                    width="200"></li>
+            <li class="portfolio_li" data-src="assets/img/alb1/solstice.jpg"><img src="assets/img/alb1/thumbs/solstice.jpg"
+                    width="200"></li>
+        </ul>
+        <script type="text/javascript">
+            lightGallery(document.getElementById('lightgallery'), {
+                thumbnail: true,
+                zoom: true,
+                selector: '.portfolio_li'
+            }); 
+        </script>
+    </div>
 </body>
 
 </html>
